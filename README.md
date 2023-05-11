@@ -53,10 +53,26 @@ The purpose of this document is to outline the functional and non-functional req
 - The script relies on the availability and stability of the GitHub API for repository synchronization.
 
 ## Dependencies
-The Fork, Clone, and Sync Repository project has the following dependencies:
-- Python 3.x
-- Tkinter library (included with Python)
-- Git (command-line)
+The following dependencies are required to run the Fork, Clone, and Sync Repository Python script:
+
+1. **Git**: The Git version control system must be installed on the local machine. It is used for cloning repositories and performing Git operations. You can download Git from the official website: [https://git-scm.com/](https://git-scm.com/)
+
+2. **Python 3**: The Python programming language is required to run the script. Ensure that Python 3 is installed on your system. You can download Python from the official website: [https://www.python.org/](https://www.python.org/)
+
+3. **Tkinter**: Tkinter is the standard GUI toolkit for Python. It is used to create the graphical user interface for the script. Tkinter is typically included with the Python installation, so no additional installation steps are required.
+
+4. **Git Bash (Windows only)**: If you are using Windows, it is recommended to have Git Bash installed. Git Bash provides a Unix-like command-line environment that is compatible with the script. You can download Git Bash as part of the Git for Windows package: [https://gitforwindows.org/](https://gitforwindows.org/)
+
+5. **PyGithub**: The PyGithub library is used to interact with the GitHub API. It is used to create forks and perform repository-related operations. You can install PyGithub using pip: `pip install PyGithub`
+
+6. **Regular Expression (re)**: The regular expression module in Python, `re`, is used for validating the repository URLs. It is a standard library and should be included with your Python installation.
+
+Please ensure that all the above dependencies are installed and properly configured before running the Fork, Clone, and Sync Repository script.
+
+Note: The script assumes that the required commands (git, python) are accessible from the command-line environment. Ensure that the corresponding executables are added to the system's PATH variable.
+
+If you encounter any issues related to missing dependencies or compatibility, refer to the official documentation and installation guides for each dependency.
+
 
 ## Future Enhancements
 - Support for additional version control systems (e.g., Bitbucket, GitLab).
